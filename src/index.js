@@ -110,4 +110,15 @@ if (containerList.style.display === "none") {
   containerList.style.display = "none";
 }
   });
+
+//clear inputs from the input search field
+//clear output from innerHTML using the cancel button
+// const ul = document.querySelector(".ul-list");
+const inputSearch = document.querySelector(".input-search");
+cancel.addEventListener("click", cancelButton);
+function cancelButton() {
+  ul.innerHTML = "";
+  inputSearch.value = "";
+  //containerList.remove()
+}
 });
