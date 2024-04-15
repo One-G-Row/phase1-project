@@ -133,4 +133,36 @@ function popupForm() {
     form.style.display = "none";
   }
 }
+
+//add an event listener submit to the form
+form.addEventListener("submit", function (event) {
+  //store the inputs values in a variable
+  const firstName = document.getElementById("first-name").value;
+  const lastName = document.getElementById("last-name").value;
+  const school = document.getElementById("country").value;
+  const email = document.getElementById("email").value;
+  const contact = document.getElementById("phone-number").value;
+  const date = document.getElementById("date").value;
+
+  //destructure the variable inputs and store them in one variable
+  const inputValues = [firstName, lastName, school, email, contact, date];
+  console.log(inputValues);
+  event.preventDefault();
+  //if form input elements are empty display message of enter valid details
+  //if they are filled output a success message
+  if (
+    firstName === "" ||
+    lastName === "" ||
+    school === "" ||
+    email === "" ||
+    contact === "" ||
+    date === ""
+  ) {
+    formSubmit.innerHTML = "Enter valid details!";
+    formSubmit.style.color = "red";
+  } else {
+    formSubmit.innerHTML = "your appointment was booked successfully!";
+    formSubmit.style.color = "green";
+  }
+}); 
 });
