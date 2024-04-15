@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+      <div class="content-visible">
+      <h3>Start your university journey today</h3>
+      <button class="start">Get Started</button>
+      <img src="images/image (2).jpg">
+    </div>
+
+    <section class="content-hidden"  style="display: none">
+      <h1>University Listings Search</h1>
+   
+
+    <nav>
+      <ul class="nav-list">
+        <a href="#"><li>Study Abroad</li></a>
+        <a href="#"><li>Study Destinations</li></a>
+        <a href="#"><li>Find a course</li></a>
+        <a href="#"> <li>Finance your study</li></a>
+        <a href="#"><li>IELTS</li></a>
+      </ul>
+
+      <div class="input-container">
+        <span class="input"><input id="input" class="input-search" placeholder="Search university name or country" /></span>
+        <button id="cancel"><img src="images/icons8-cancel-48.png" class="icons"/></button>
+        <button id="search"><img src="images/icons8-search-48.png" class="icons"/></button>
+      </div>
+    </nav>
+
+    <div class="image-banner">
+      <!-- input images here -->
+    <img src="images/1-banner.jpg">
+     </div>
+    </header>
+    <div class="content"> 
+<p>The University Listings Search can help you sort your options and make you aware of universities you may not have otherwise heard of! It is compiled on the basis of its own list of factors taken into consideration.
+  At the same time, university rankings should be used together with additional research of each university or school so you can make an informed choice about where to go based on your own preferences.
+  It’s important to note that these tools aren’t the only measure of how appropriate the university or school may be for you; it’s just one of the elements to consider.</p>
+    </div>
+
+    <div class="appointment"> 
+<p>To book an appointment with the school of choice. Click the button below and fill in the form. The university search listings website will forward your details to the school. The school will get in contact with you as soon as possible.</p>
+</div>
+<button class="book">BOOK APPOINTMENT</button>
+    <button class="close-lists"><img src ="images/icons8-cancel-48.png" class="icons"/></button>
+    
+      <!-- enter fetched data here -->
+    <div class="container" style="display:none">
+      <ul class="ul-list"></ul>
+  </div>
+      
+    
+ 
+    <form class="form" style = "display: none";>
+      <button class="close"><img src="images/icons8-cancel-48.png" class="icons"/></button>
+      <p>Fill in the form to book an appointment:</p>
+     <label>First Name: <input id="first-name" class="inputs" type="text" placeholder="first name" required/></label><br/>
+     <label>Last Name<input id="last-name" class="inputs" type="text" placeholder="last name" required/></label><br/>
+      <label for="Country">Country of origin</label><select id="country" class="inputs" type="text" placeholder="country" required><option value="">Country</option></select></label><br/>
+      <label>Email<input id="email" class="inputs" type="email" placeholder="email" required/></label><br/>
+      <label>Contact<input id="phone-number" class="inputs" type="tel" placeholder="phone number" required/></label><br/>
+      <label>D.O.B<input id="date" class="inputs" type = "date" required/> </label><br/>
+     <button id="submit">SUBMIT</button>
+      <p id="form-submit"></p>
+    </form>
+    </div>
+    <section>
+      <footer>
+        <div class="universities">
+         <h4>Top Universities</h4>
+        <ul>
+         <li>Universities Of Sydney</li>
+          <li>Edith Cowan University</li>  
+          <li>La TrobeUniversities</li>
+          <li>University of Alberta</li>  
+          <li>University of Bath</li>
+          <li>Arizona State University</li>  
+        </ul>
+      </div>
+      <div class="courses">
+        <h4>Top Courses</h4>
+        <ul>
+          <li>Nutrition courses</li>
+           <li>Software Engineering courses</li>  
+           <li>Business English courses</li>
+           <li>Engineering courses</li>  
+           <li>Mechanical Engineering courses</li>
+           <li>English language course</li>  
+         </ul>
+        </div>
+        <div class="visa">
+         <h4>Student visa requirements</h4>
+        <ul>
+          <li>Australia student visa requirements</li>
+           <li>Canada student visa requirements</li>  
+           <li>UK student visa requirements</li>
+           <li>New Zealand student visa requirements</li>  
+           <li>US student visa requirements</li>
+           <li>Ireland student visa requirements</li>  
+         </ul>
+        </div>
+        <div class = "contacts">
+          <a href="https://www.facebook.com/"><img src="images/facebook.png"/></a>
+          <a href="https://twitter.com/?lang=en"><img src="images/twitter.png"></a>
+          <a href="https://www.instagram.com/"><img src="images/instagram.png"></a>
+        </div>
+      </footer>
+    </section>
+  </section>
+
+
+    <script src="./src/index.js"></script>
+  </body>
+</html>
+
