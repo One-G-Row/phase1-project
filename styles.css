@@ -8,7 +8,6 @@ div.content-visible img {
   width: 100%;
   height: 100%;
   overflow-wrap: hidden;
-  /*  overflow-x: hidden */
   position: absolute;
   top: 0;
   left: 0;
