@@ -168,8 +168,6 @@ form.addEventListener("submit", function (event) {
   //get the inputs value from the inputs field created in html
 const inputs = document.querySelectorAll(".inputs");
 
-//create a separate function for submitting the form
-
   //clear the form after the submit button is clicked
   form.reset();
 
@@ -179,6 +177,32 @@ const inputs = document.querySelectorAll(".inputs");
     formSubmit.innerHTML = "";
   });
 }); 
+
+//get the country elemtn in the form
+const countryDropdown = document.getElementById("country");
+
+countryDropdown.addEventListener("click", listCountries);
+
+//get a list of countries from api
+fetch("https://api.first.org/data/v1/countries/")
+  .then((response) => response.json())
+  .then((data) => listCountries(data))
+  .catch((err) => {
+    console.log("Cannot get the countries", err);
+  });
+
+//access the countries key in the data object
+//call listCountries function to render the countries list in the countries dropdown button
+function listCountries(data) {
+  if (data && data.hasOwnProperty("data")) {
+    for (let countryCode in data.data) {
+      let countryData = data.data[countryCode];
+      let option = document.createElement("option");
+      option.innerHTML = countryData.country;
+      countryDropdown.appendChild(option);
+    }
+  }
+}
 
 
 });
