@@ -1,0 +1,294 @@
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: gray;
+  margin: auto;
+}
+
+div.content-visible img {
+  width: 100%;
+  height: 100%;
+  overflow-wrap: hidden;
+  /*  overflow-x: hidden */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.list-containers {
+  position: absolute;
+  top: 15px;
+  left: 50px;
+  width: 80%;
+  height: 90vh;
+}
+
+.close-lists {
+  position: relative;
+  bottom: 590px;
+  float: right;
+  right: 290px;
+  background: none;
+  border: none;
+}
+
+/* .ul-list {
+  background: white;
+  position: absolute;
+  top: 20px;
+  left: 200px;
+  width: 60%;
+  height: 80vh;
+  color: black;
+  font-weight: bold;
+} */
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70vw;
+  height: 70vh;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+}
+
+h1 {
+  margin-left: 20px;
+  font-size: 24pt;
+  color: white;
+}
+
+.input-container {
+  display: flex-box;
+}
+
+#input {
+  width: 60%;
+  height: 25px;
+  padding: 10px;
+  padding-left: 30px;
+  border-radius: 5px;
+  border: none;
+  position: absolute;
+  top: 170px;
+  margin-left: 180px;
+  font-size: 14pt;
+  cursor: pointer;
+}
+/*style the icon images*/
+.icons {
+  width: 24px;
+  height: 18px;
+  position: relative;
+  border: none;
+}
+
+/*position the cancel and search button*/
+#cancel {
+  position: relative;
+  left: 59rem;
+  top: 50px;
+  background: none;
+  border: none;
+}
+
+#search {
+  position: relative;
+  left: 54rem;
+  top: 50px;
+  background: none;
+  border: none;
+}
+
+.content-visible {
+  width: 100%;
+  height: 100vh;
+  /* background: rgb(91, 209, 215); */
+  font-size: 30px;
+  overflow: hidden;
+  overflow-y: hidden;
+}
+
+h3 {
+  position: absolute;
+  top: 200px;
+  left: 330px;
+  color: white;
+  z-index: 10;
+}
+
+.start {
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  top: 300px;
+  left: 330px;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  background: rgb(91, 209, 215);
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 150px;
+  z-index: 10;
+}
+
+.content {
+  width: 400px;
+  background: white;
+  position: absolute;
+  top: 250px;
+  float: left;
+  padding: 10px;
+  font-weight: bold;
+  margin-left: 10px;
+  opacity: 0.5;
+}
+.appointment {
+  width: 300px;
+  height: 40%;
+  background: white;
+  position: absolute;
+  top: 250px;
+  float: right;
+  right: 0;
+  padding: 10px;
+  font-weight: bold;
+  margin-right: 10px;
+  opacity: 0.5;
+}
+
+.container {
+  position: absolute;
+  top: 10px;
+  left: 450px;
+  width: 38%;
+  height: 2000;
+  padding-left: 20px;
+  background: white;
+}
+
+.book {
+  width: 170px;
+  height: 50px;
+  position: absolute;
+  top: 450px;
+  right: 70px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  background: rgb(136, 224, 4);
+  color: white;
+  font-size: 20px;
+  margin-left: 150px;
+}
+.content-hidden {
+  background: gray;
+  width: 100%;
+  height: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+.nav-list {
+  display: inline-flex;
+  margin-left: 140px;
+}
+
+.nav-list a {
+  color: white;
+  font-weight: bold;
+  border-right: 1px white solid;
+  padding: 0 20px;
+  text-decoration: none;
+}
+
+ul a li {
+  padding: 0 10px;
+}
+
+a:hover {
+  background: white;
+  color: gray;
+  width: 120px;
+  height: 40px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.image-banner {
+  max-width: 30%;
+}
+
+.image-banner img {
+  width: 100vw;
+}
+.form {
+  width: 30%;
+  height: 67vh;
+  border-radius: 7px;
+  display: flexbox;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+input,
+select {
+  margin: 10px;
+  padding: 5px;
+}
+
+select {
+  width: 190px;
+}
+
+.close {
+  border: none;
+  background: none;
+  float: right;
+  top: 0;
+}
+
+#submit {
+  display: flexbox;
+  width: 120px;
+  height: 40px;
+  margin-left: 150px;
+  border: none;
+  border-radius: 5px;
+  background: rgb(136, 224, 4);
+  color: rgb(51, 122, 30);
+  font-weight: bold;
+}
+h4 {
+  /* text-align: center; */
+  margin-left: 40px;
+}
+.universities {
+  position: absolute;
+  left: 20px;
+  color: white;
+}
+.courses {
+  position: absolute;
+  top: 600px;
+  left: 440px;
+  color: white;
+}
+.visa {
+  position: absolute;
+  top: 600px;
+  left: 840px;
+  color: white;
+}
+
+.contacts {
+  margin-left: 50px;
+}
+
+.contacts a img:hover {
+  background: white;
+}
