@@ -101,5 +101,13 @@ search.addEventListener("click", function () {
       }
     });
   }
+
+//set a condition that if container is hidden show the container with the list of universities, country and email addresses
+  const containerList = document.querySelector(".container");
+if (containerList.style.display === "none") {
+  containerList.style.display = "block";
+} else {
+  containerList.style.display = "none";
+}
   });
 });
