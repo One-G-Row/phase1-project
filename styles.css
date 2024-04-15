@@ -64,6 +64,7 @@ h1 {
   font-size: 14pt;
   cursor: pointer;
 }
+
 /*style the icon images*/
 .icons {
   width: 24px;
@@ -89,10 +90,10 @@ h1 {
   border: none;
 }
 
+/*style the start page that is initially visible*/
 .content-visible {
   width: 100%;
   height: 100vh;
-  /* background: rgb(91, 209, 215); */
   font-size: 30px;
   overflow: hidden;
   overflow-y: hidden;
