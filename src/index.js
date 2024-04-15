@@ -71,6 +71,35 @@ search.addEventListener("click", function () {
       alert("No university found");
     }
   }
-    
+
+  //get the countries then filter the universities by country
+  const urlFilter = "http://universities.hipolabs.com/search?country=";
+  const input_value = input.value;
+  fetch(`${urlFilter}${input_value}`)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response error");
+      } else {
+        return response.json();
+      }
+    })
+    .then((countries) => filterSearch(countries))
+    .catch((err) => {
+      console.log("data error", err);
+    });
+  function filterSearch(countries) {
+    countries.forEach((country) => {
+      if (country === input_value) {
+        const ulList = document.querySelector(".ul-list");
+        const newLi = document.createElement("li");
+
+        newLi.innerHTML = `
+            <p>${country.name}</p>
+            <a href=${country.web_pages}>${country.web_pages}</a>
+            `;
+        ulList.appendChild(newLi);
+      }
+    });
+  }
   });
 });
