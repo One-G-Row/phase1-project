@@ -212,7 +212,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //close the container that holds the ul with the listed data
 const closePanels = document.querySelector(".close-lists");
-//const containerList = document.querySelector(".container");
 closePanels.addEventListener("click", closeLists);
 function closeLists() {
   containerList.remove();
