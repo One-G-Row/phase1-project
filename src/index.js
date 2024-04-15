@@ -121,4 +121,16 @@ function cancelButton() {
   inputSearch.value = "";
   //containerList.remove()
 }
+
+//link book appointment button with the form
+//when the button is clicked the form pops up
+book.addEventListener("click", popupForm);
+function popupForm() {
+  //event.preventDefault();
+  if (form.style.display === "none") {
+    form.style.display = "block";
+  } else {
+    form.style.display = "none";
+  }
+}
 });
