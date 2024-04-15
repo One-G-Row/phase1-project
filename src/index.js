@@ -164,5 +164,21 @@ form.addEventListener("submit", function (event) {
     formSubmit.innerHTML = "your appointment was booked successfully!";
     formSubmit.style.color = "green";
   }
+
+  //get the inputs value from the inputs field created in html
+const inputs = document.querySelectorAll(".inputs");
+
+//create a separate function for submitting the form
+
+  //clear the form after the submit button is clicked
+  form.reset();
+
+  //clear the innerHTML of the form once display message is shown
+
+  form.addEventListener("click", function () {
+    formSubmit.innerHTML = "";
+  });
 }); 
+
+
 });
